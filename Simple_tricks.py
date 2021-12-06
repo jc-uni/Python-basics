@@ -1,4 +1,7 @@
 from time import sleep
+import bear
+import cat
+import dog
 
 #intro txt
 def print_some_stuff():
@@ -29,7 +32,7 @@ def various_data_types():
     print(type(a_dictionary))
     print(a_dictionary)
     for key, value in a_dictionary.items():
-        print(f'{key:10} --> {value:}') #formatted string literal
+        print(f'{key:10} --> {value:1}') #formatted string literal
 
 
 def main():
