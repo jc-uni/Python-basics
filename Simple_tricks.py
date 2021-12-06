@@ -1,4 +1,5 @@
 from time import sleep
+import numpy as np
 
 #intro txt
 def print_some_stuff():
@@ -27,10 +28,16 @@ def various_data_types():
     print(type(a_dictionary))
     print(a_dictionary)
 
-
+def numpy_things():
+    np_an_array = np.array([1,2,3,4,5,6,7,8,9,0])
+    np_another_array = np.array([[1,2,3],[4,5,6],[7,8,9]])
+    print(np_another_array*2)
+    print(np_another_array[-1][0])
+    
 
 def main():
     print_some_stuff()
+    numpy_things()
 
 if __name__ == "__main__":
     main()
