@@ -2,6 +2,8 @@ from time import sleep
 
 #intro txt
 def print_some_stuff():
+    """prints some stuff
+    """
     print("Hello world" +"\r\n" +"wait...")
     sleep(1)
     print("This is python 3.9")
@@ -26,7 +28,8 @@ def various_data_types():
     print(a_tuple)
     print(type(a_dictionary))
     print(a_dictionary)
-
+    for key, value in a_dictionary.items():
+        print(f'{key:10} --> {value:}') #formatted string literal
 
 
 def main():
