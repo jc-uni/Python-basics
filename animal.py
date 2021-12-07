@@ -1,10 +1,9 @@
-class animal(object):
-    
+class Animal:
     def __init__(self):
-        name = "animal name"
-        latin_name = "animales"
-        tameable = False
-        sound = "noise"
+        self.name = "animal name"
+        self.latin_name = "animales"
+        self.tameable = False
+        self.sound = "noise"
 
-    def make_sound():
-        print(sound)
+    def make_sound(self):
+        print(self.sound)

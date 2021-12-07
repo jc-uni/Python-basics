@@ -1,7 +1,10 @@
-class my_class(object):
+from animal import Animal
+
+class Dog(Animal):
     def __init__(self):
-        name = "dog"
-        latin_name = "canis"
-        tameable = True
-        sound = "woof"
+        super().__init__()
+        self.name = "dog"
+        self.latin_name = "canis"
+        self.tameable = True
+        self.sound = "woof"
 

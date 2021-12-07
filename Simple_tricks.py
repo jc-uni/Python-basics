@@ -1,7 +1,7 @@
 from time import sleep
-import bear
-import cat
-import dog
+from bear import Bear
+from cat import Cat
+from dog import Dog
 
 #intro txt
 def print_some_stuff():
@@ -35,8 +35,18 @@ def various_data_types():
         print(f'{key:10} --> {value:1}') #formatted string literal
 
 
+def animals():
+    a_bear = Bear()
+    a_cat = Cat()
+    a_dog = Dog()
+    a_bear.make_sound()
+    a_cat.make_sound()
+    a_dog.make_sound()
+
+
 def main():
     print_some_stuff()
+    animals()
 
 if __name__ == "__main__":
     main()
