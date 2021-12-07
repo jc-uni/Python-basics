@@ -43,9 +43,17 @@ def animals():
     a_cat.make_sound()
     a_dog.make_sound()
 
+    book_of_animals = {a_bear, a_cat, a_dog}
+    for ani in book_of_animals:
+        if ani.tameable == True:
+            print("a " +ani.name +": hug it, pet it, love it")
+        elif ani.tameable == False:
+            print("a lunch is you")
+
 
 def main():
     print_some_stuff()
+    print("__"*40)
     animals()
 
 if __name__ == "__main__":
