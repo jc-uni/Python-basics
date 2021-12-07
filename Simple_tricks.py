@@ -1,5 +1,8 @@
 from time import sleep
 import numpy as np
+from bear import Bear
+from cat import Cat
+from dog import Dog
 
 #intro txt
 def print_some_stuff():
@@ -29,6 +32,24 @@ def various_data_types():
     print(a_tuple)
     print(type(a_dictionary))
     print(a_dictionary)
+    for key, value in a_dictionary.items():
+        print(f'{key:10} --> {value:1}') #formatted string literal
+
+
+def animals():
+    a_bear = Bear()
+    a_cat = Cat()
+    a_dog = Dog()
+    a_bear.make_sound()
+    a_cat.make_sound()
+    a_dog.make_sound()
+
+    book_of_animals = {a_bear, a_cat, a_dog}
+    for ani in book_of_animals:
+        if ani.tameable == True:
+            print("a " +ani.name +": hug it, pet it, love it")
+        elif ani.tameable == False:
+            print("a lunch is you")
 
 def numpy_things():
     np_an_array = np.array([1,2,3,4,5,6,7,8,9,0])
@@ -40,6 +61,8 @@ def numpy_things():
 def main():
     print_some_stuff()
     numpy_things()
+    print("__"*40)
+    animals()
 
 if __name__ == "__main__":
     main()
